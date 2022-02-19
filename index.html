@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games News -  L'actualité de vos jeux vidéo préférés</title>
+		<meta name="author" content="Alexis Gousseau, Gaëtan Moreau, Quentin Darphel">
+    <link rel="icon" type="image/png" href="data/logo.png"/>
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="categories">
+    <nav id="nav" class="navbar">
+      <div class="navbar__logo">
+        <a href="index.html"><img class="logo" alt="loto games news" src="data/logo 1.png"></a>
+      </div>
+      <div class="navigation">
+        <p class="btnFermer">Fermer</p>
+        <ul class="categories__liste"></ul>
+        <svg class="SVGajouterCat">
+          <use href="#icon-plus"></use>
+        </svg>
+      </div>
+      <p class="btnMenu">Menu</p>
+    </nav>
+
+    <section class="main">
+        <input class="main__btnadd m1" type="text" name="Url" placeholder="Url du flux">
+        <input class="addsup m1" type="text" name="Url" placeholder="Nom de la nouvelle catégorie">
+        <input class="main__btnValider m1" type="button" name="Url" value="Valider">
+        <form class="filtre">
+        <input class="filtre__btnValider" type="text" id="myInput" placeholder="Rechercher...">
+        <select class="filtre__date">
+          <option class="filtre__croissant" value="1" selected>Croissant
+          <option class="filtre__decroissant" value="2">Décroissant
+        </select>
+      </form>
+    </section>
+    
+    <template id="item">
+        <article class="article">
+          <a class="lien" href="" target="_blank">
+            <img class="image" href="">
+            <div class="detail">
+              <h3 class="titre"></h3>
+              <!--<div class="date"></div>-->
+              <div class="description"></div>
+            </div>
+          </a>
+        </article>
+    </template>
+  </section>
+  
+  <section class="parameter">
+      <section class="changemode">
+          <div class="changemode1">
+            <svg width="32" height="28" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg%22%3E">
+                <rect y="1.5" width="30" height="7" fill="white"/>
+                <rect y="12.5" width="30" height="7" fill="white"/>
+                <rect y="23.5" width="30" height="7" fill="white"/>
+            </svg>
+          </div>
+           <div class="changemode2">
+            <svg width="28" height="26" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg%22%3E">
+                <rect width="12" height="12" fill="white"/>
+                <rect x="16" width="12" height="12" fill="white"/>
+                <rect y="16" width="12" height="12" fill="white"/>
+                <rect x="16" y="16" width="12" height="12" fill="white"/>
+            </svg>
+          </div>
+      </section>
+    </section>
+
+    <ul class="categories__favoris">Vos favoris sont :</ul>
+
+    <section class="article_container" id="article_container"></section>
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-plus" viewBox="0 0 32 32">
+          <title>Ajouter une catégorie</title>
+          <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+        </symbol>
+      </defs>
+    </svg>
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-keyboard_arrow_up" viewBox="0 0 24 24">
+          <title>keyboard_arrow_up</title>
+          <path d="M7.406 15.422l-1.406-1.406 6-6 6 6-1.406 1.406-4.594-4.594z"></path>
+        </symbol>
+      </defs>
+    </svg>
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-map" viewBox="0 0 32 32">
+          <title>map</title>
+          <path d="M0 6l10-4v24l-10 4z"></path>
+          <path d="M12 1l10 6v23l-10-5z"></path>
+          <path d="M24 7l8-6v24l-8 6z"></path>
+        </symbol>
+      </defs>
+    </svg>
+
+  <script src="js/main.js" async></script>
+</body>
+</html>
