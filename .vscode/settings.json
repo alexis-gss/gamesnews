@@ -13,7 +13,7 @@
         "titleBar.inactiveBackground": "#2CAB5B77",
         "titleBar.inactiveForeground": "#1D1D1D77",
 
-        "icon.foreground": "#1D1D1D",
+        "icon.foreground": "#2CAB5B",
         "titleBar.activeForeground": "#1D1D1D",
         "statusBar.foreground": "#1D1D1D",
         "activityBar.activeBackground": "#1D1D1D",
