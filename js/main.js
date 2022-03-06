@@ -281,11 +281,13 @@ var V = {
       V.ouvertureAdd = false
       V.main.classList.remove("main__activated")
       V.parameter.classList.remove("parameter__activated")
+      V.addcat.classList.remove("SVGajouterCatActivated")
     }
     else{
       V.ouvertureAdd = true
       V.main.classList.add("main__activated")
       V.parameter.classList.add("parameter__activated")
+      V.addcat.classList.add("SVGajouterCatActivated")
     }
   },
   getElement:function(){

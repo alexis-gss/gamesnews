@@ -61,6 +61,10 @@ button:focus, input{
   height: 3rem;
   margin-left: 4rem;
   fill: var(--color3);
+  transition: .3s;
+}
+.SVGajouterCatActivated{
+  transform: rotate(90deg);
 }
 .SVGajouterCat:hover{
   fill: var(--color2);
