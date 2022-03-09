@@ -55,10 +55,10 @@ var M = {
 
 var C = {
   tabListe : [],
-  tabFlux : ["https://www.jeuxactu.com/rss/ja.rss", "https://www.jeuxactu.com/rss/pc.rss", "https://www.jeuxactu.com/rss/ps5.rss", "https://www.jeuxactu.com/rss/xbox-series-x.rss"],
+  tabFlux : ["https://www.jeuxactu.com/rss/ja.rss", "https://www.jeuxactu.com/rss/pc.rss", "https://www.jeuxactu.com/rss/ps5.rss", "https://www.jeuxactu.com/rss/xbox-series-x.rss", "https://www.jeuxactu.com/rss/switch.rss"],
   tabFluxFav : [],
   tabFluxAjoute : [],
-  tabNames : ["Toutes les catégories", "PC", "PS5", "XBOX SERIES X"],
+  tabNames : ["Toutes les catégories", "PC", "PS5", "XBOX SERIES X", "Switch"],
   tabNamesFav : [],
   tabNamesAjoute : [],
   tabCheckboxs : [],
@@ -258,7 +258,7 @@ var V = {
       li.className = "liMenu"
       document.querySelector(".categories__liste").appendChild(li)
       C.tabListe.push(li)
-      if(i > 3){
+      if(i > 4){
         var label = document.createElement('label')
         label.classList = "container"
         document.querySelector(".categories__liste").appendChild(label)
