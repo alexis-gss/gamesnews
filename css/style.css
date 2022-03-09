@@ -3,6 +3,7 @@
   --color2: #2CAB5B;
   --color3: #fff;
   --color4: #C4C4C4;
+  --shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -95,12 +96,11 @@ button:focus, input{
   height: 15rem;
   width: 75vw;
   border-radius: 20px;
-  box-shadow: transparent;
   transition: box-shadow .3s;
 }
 .lien:hover{
   text-decoration: none;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: var(--shadow);
 }
 .titre{
   font-size: 1.4vw; /*QUENTIN*/
@@ -138,6 +138,7 @@ button:focus, input{
   width: 100%;
   z-index: 1;
   transform: translateY(-100%);
+  box-shadow: var(--shadow);
   transition: .3s;
 }
 .main__activated{
