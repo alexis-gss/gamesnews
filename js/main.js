@@ -98,9 +98,9 @@ var C = {
   },
   //permet de d'ajouter ou supprimer des informations en fonction de la checkbox cochée
   handler__eventCheckbox: function(){
-    V.oui = document.querySelectorAll(".categoriesLiFav")
-    for (let y = 0 ; y < V.oui.length ; y ++) {
-      V.oui[y].remove()
+    V.categoriesLiFavs = document.querySelectorAll(".categoriesLiFav")
+    for (let y = 0 ; y < V.categoriesLiFavs.length ; y ++) {
+      V.categoriesLiFavs[y].remove()
       C.tabFluxFav.splice(C.tabFlux[y])
       C.tabFluxFav.splice(C.tabFluxAjoute[y])
       C.tabNamesFav.splice(C.tabNames[y])
