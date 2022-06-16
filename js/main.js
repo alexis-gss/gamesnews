@@ -33,8 +33,8 @@ var M = {
       callback(data);
     }
     xhr.addEventListener('load', handler_load);
-    // xhr.open("GET", "https://www.alexis-gousseau.com/data/GamesNews/php/fluxrss.php?flux=" + url, true);
-    xhr.open("GET", "http://localhost/gamesnews/php/fluxrss.php?flux=" + url, true);
+    xhr.open("GET", "https://gamesnews.alexis-gousseau.com/php/fluxrss.php?flux=" + url, true);
+    // xhr.open("GET", "http://localhost/gamesnews/php/fluxrss.php?flux=" + url, true);
     xhr.send();
   },
   //permet de supprimer tous les enfants ayant la balise 'article'
